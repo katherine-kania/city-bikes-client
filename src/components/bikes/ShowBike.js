@@ -16,7 +16,7 @@ const ShowBike = (props) => {
     const [bike, setBike] = useState(null)
     const [modalOpen, setModalOpen] = useState(false)
     const [updated, setUpdated] = useState(false)
-    const {user, msgAlert} = props
+    const {msgAlert} = props
     const { id } = useParams()
     const navigate = useNavigate()
     console.log('id in showBike', id)
@@ -41,7 +41,7 @@ const ShowBike = (props) => {
     }, [updated])
 
     const removeTheBike = () => {
-        removeBike(user, bike.id)
+        removeBike(bike.id)
             .then(() => {
                 msgAlert({
                     heading: 'Location removed!',
@@ -98,7 +98,6 @@ const ShowBike = (props) => {
             <EditBikeModal 
                 bike={bike}
                 show={modalOpen}
-                user={user}
                 msgAlert={msgAlert}
                 triggerRefresh={() => setUpdated(prev => !prev)}
                 updateBike={updateBike}
