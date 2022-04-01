@@ -13,6 +13,7 @@ import SignIn from './components/auth/SignIn'
 import SignOut from './components/auth/SignOut'
 import ChangePassword from './components/auth/ChangePassword'
 import ShowBike from './components/bikes/ShowBike'
+import CreateBike from './components/bikes/CreateBike'
 
 const App = () => {
 
@@ -68,6 +69,14 @@ const App = () => {
 				<RequireAuth user={user}>
 					<ChangePassword msgAlert={msgAlert} user={user} />
 				</RequireAuth>}
+			/>
+			<Route
+				path='/addlocation'
+				element={
+					<RequireAuth user={user}>	
+						<CreateBike msgAlert={msgAlert} user={user} />
+					</RequireAuth>
+				}
 			/>
 			<Route
 				path='/citybikes/:id'
