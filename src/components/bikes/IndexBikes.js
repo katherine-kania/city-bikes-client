@@ -64,7 +64,7 @@ const IndexBikes = (props) => {
 
     return (
         <>
-            <h3>All the City Bike locations</h3>
+            <h3 style={cardContainerLayout}>All the City Bike locations</h3>
             <div style={cardContainerLayout}>
                 {bikeCards}
             </div>
