@@ -13,7 +13,7 @@ const EditBikeModal = (props) => {
         setBike(prevBike => {
             const name = e.target.name
             let value = e.target.value
-            console.log('etarget type', e.target.type)
+            console.log('etarget type', e.target.numStations)
             console.log('this is e.target checked', e.target.checked)
             if(name === "ebikes" && e.target.checked){
                 value = true
@@ -21,7 +21,7 @@ const EditBikeModal = (props) => {
                 value = false
             }
 
-            if (e.target.type === 'number') {
+            if (e.target.numStations === 'number') {
                 value = parseInt(e.target.value)
             }
 
