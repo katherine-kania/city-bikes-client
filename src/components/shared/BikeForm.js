@@ -25,6 +25,13 @@ const BikeForm = ({ bike, handleSubmit, handleChange }) => (
                 name='country'
                 onChange={handleChange}
             />
+            <Form.Label>Company</Form.Label>
+            <Form.Control 
+                placeholder="what are the bikes called?"
+                value={bike.company}
+                name='company'
+                onChange={handleChange}
+            />
             <Form.Control 
                 placeholder="How many stations are there?"
                 value={bike.numStations}

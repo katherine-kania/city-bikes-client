@@ -41,7 +41,7 @@ const CreateBike = (props) => {
         e.preventDefault()
 
         createBike(bike)
-            .then(res => {navigate(`/pets/${res.data.bike.id}`)})
+            .then(res => {navigate(`/citybike/${res.data.bike.id}`)})
             .then(() =>
                 msgAlert({
                     heading: 'Location Added! Success!',
