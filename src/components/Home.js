@@ -1,10 +1,12 @@
+import IndexBikes from "./bikes/IndexBikes"
+
 const Home = (props) => {
-	// const { msgAlert, user } = props
+	const { msgAlert, user } = props
 	console.log('props in home', props)
 
 	return (
 		<>
-			<h2>Home Page</h2>
+			<IndexBikes msgAlert={msgAlert} user={user}/>
 		</>
 	)
 }

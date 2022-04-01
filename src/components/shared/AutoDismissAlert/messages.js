@@ -6,6 +6,12 @@ const messages = {
 	signOutSuccess: 'Come back soon!',
 	changePasswordSuccess: 'Password changed successfully!',
 	changePasswordFailure:'Failed to change passwords. Check your old password and try again.',
+	indexBikesSuccess: "City Bike locations retrieved successfully!",
+	indexBikesFailure: "Failed to get City Bike location. Please try again.",
+	showBikeSuccess: "City Bike location retrieved successfully!",
+	showBikeFailure: "Failed to get City Bike location. Please try again.",
+	createBikeSuccess: "City Bike location created successfully!",
+	createBikeFailure: "Something went wrong. Please try again."
 }
 
 module.exports = messages
